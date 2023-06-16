@@ -1,0 +1,89 @@
+.carousel-inner img {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  min-height:200px;
+}
+
+@media (min-width: 990px){
+  .outerimage{
+    height: 250px;
+    width: 225px;
+    padding: 25px 0px 0px 0px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+}
+
+@media (max-width: 989px) and (min-width:771px) {
+  .outerimage{
+    height: 200px;
+    width: 170px;
+    padding: 25px 0px 0px 0px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+}
+
+@media (max-width: 770px){
+  .outerimage{
+    height: 200px;
+    width: 120px;
+    padding: 25px 0px 0px 0px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; 
+  }
+  
+}
+.project-head{
+  font-size: 18px;
+  color: black;
+  padding-top: 4px;
+  font-weight: bold;
+}
+
+
+@media(max-width:575px){
+  .project-head{
+    font-size: 20px;
+  }
+  .outerimage{
+    height: 500px;
+    width: 450px;
+    padding: 25px 0px 0px 20px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+}
+
+@media(max-width:475px){
+  .project-head{
+    font-size: 20px;
+  }
+  .outerimage{
+    height: 400px;
+    width: 300px;
+    padding: 25px 0px 0px 20px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+}
+
+.festive{
+  font-size: 13px;
+}
+
+.img-responsive:hover{
+  transform: scale(1.3); 
+}

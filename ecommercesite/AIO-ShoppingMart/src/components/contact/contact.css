@@ -1,0 +1,350 @@
+/* CSS STYLING FOR CONTACT FORM COMPONENT */
+.containerr {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #fafafa;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 820px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.centeer{
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+.submit-inpuut{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #a430da;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.contact-formm {
+  background-color: #9d57c5;
+  position: relative;
+}
+
+.circlee {
+  border-radius: 50%;
+  background: linear-gradient(135deg, transparent 20%, #6b0999);
+  position: absolute;
+}
+
+.contact-formm:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #9d57c5;
+
+  transform: rotate(45deg);
+  top: 50px;
+  left: -13px;
+}
+
+form {
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+
+.titlee {
+  font-weight: 500;
+  font-size: 2.0rem;
+  line-height: 1;
+  margin-bottom: 0.7rem;
+}
+
+.contact-infoo {
+  padding: 2.3rem 2.2rem;
+  position: relative;
+}
+
+.contact-infoo .title {
+  color: #9d57c5;
+}
+
+.textt {
+  color: #333;
+  margin: 1.5rem 0 2rem 0;
+  font-size: 1.3rem;
+}
+
+.informationn {
+  display: flex;
+  color: #555;
+  margin: 0.7rem 0;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+
+.iconn {
+  width: 28px;
+  margin-right: 0.7rem;
+}
+
+.social-mediaa {
+  padding: 2rem 0 0 0;
+}
+
+.social-mediaa p {
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.social-iconss {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.social-iconss a {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #9d57c5, #6b0999);
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
+
+.social-iconss a:hover {
+  transform: scale(1.05);
+}
+
+.contact-infoo:before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 100px;
+  border: 22px solid #9d57c5;
+  border-radius: 50%;
+  bottom: -77px;
+  right: 50px;
+  opacity: 0.3;
+}
+
+.big-circlee {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #9d57c5, #6b0999);
+  bottom: 50%;
+  right: 50%;
+  transform: translate(-40%, 38%);
+}
+
+.big-circlee:after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  top: calc(50% - 180px);
+  left: calc(50% - 180px);
+}
+
+.squaree {
+  position: absolute;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(181%, 11%);
+  opacity: 0.2;
+}
+
+@media (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-infoo:before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
+  }
+
+  .contact-formm:before {
+    top: -13px;
+    left: initial;
+    right: 70px;
+  }
+
+  .squaree {
+    transform: translate(140%, 43%);
+    height: 350px;
+  }
+
+  .big-circlee {
+    bottom: 75%;
+    transform: scale(0.9) translate(-40%, 30%);
+    right: 50%;
+  }
+
+  .textt {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .social-mediaa {
+    padding: 1.5rem 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerr {
+    padding: 1.5rem;
+  }
+
+  .contact-infoo:before {
+    display: none;
+  }
+
+  .squaree,
+  .big-circlee {
+    display: none;
+  }
+
+  form,
+  .contact-infoo {
+    padding: 1.7rem 1.6rem;
+  }
+
+  .textt,
+  .informationn,
+  .social-mediaa p {
+    font-size: 0.9rem;
+  }
+
+  .titlee {
+    font-size: 1.25rem;
+  }
+
+  .social-iconss a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .iconn {
+    width: 23px;
+  }
+}
+
+.login-container{
+    margin:0;
+    padding:0;
+    height: 75vh;
+}
+
+.centeer h1{
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+}
+.centeer form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+
+.circlee.one {
+  width: 120px;
+  height: 120px;
+  top: 120px;
+  right: -40px;
+}
+
+.circlee.two {
+  width: 70px;
+  height: 70px;
+  top: 10px;
+  right: 30px;
+}
+
+.titlee{
+  color:black;
+  font-weight: bold;
+}
+

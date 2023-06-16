@@ -1,0 +1,42 @@
+/* CSS STYLING FOR FOOTER COMPONENT */
+
+.copyright{
+    font-size: 15px;
+}
+
+.text-size{
+    font-size: 13px;
+    color: black;
+}
+
+.head-size{
+    font-size: 15px;
+    color:black;
+}
+
+.social-text{
+    color:black;
+   
+}
+
+.text{
+    color:black;
+}
+
+.text-reset.hover{
+    color:'#C26DBC';
+}
+
+.footer{
+    background: '#C26DBC';
+}
+
+.section{
+    background-color: rgb(241, 170, 241);
+}
+
+@media(max-width:999px){
+    .section{
+        display: none;
+    }
+}
